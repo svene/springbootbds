@@ -1,0 +1,5 @@
+= Baloise Design System from static files via Spring Boot
+
+== Conclusion
+- Pro: the BDS webjar together with webjars-locator can be used
+- Con: Using Spring Boot for this feels like overkill.
