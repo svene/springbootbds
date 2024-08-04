@@ -46,6 +46,16 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+			<groupId>org.webjars</groupId>
+			<artifactId>webjars-locator</artifactId>
+			<version>0.52</version>
+		</dependency>
+		<dependency>
+			<groupId>com.baloise.webjars</groupId>
+			<artifactId>baloise-design-system</artifactId>
+			<version>16.2.1</version>
+		</dependency>
 	</dependencies>
 
 	<build>
