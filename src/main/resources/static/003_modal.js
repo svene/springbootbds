@@ -1,14 +1,22 @@
 import { balIconConsultant } from './webjars/baloise-design-system/@baloise/ds-icons/index.esm.js';
 import { balBrandIconTheftCarGreen } from './webjars/baloise-design-system/@baloise/ds-brand-icons/index.esm.js';
 
-const openButton = document.querySelector('bal-button');
-console.log(openButton);
+const openButton = document.getElementById('openBtn');
+// const modal = document.getElementById('modal');
 
-export function ccc() {
-	console.log('ccc');
-}
+(async () => {
+	await customElements.whenDefined('bal-modal')
+	// const todoListElement = document.querySelector('bal-select')
+	// await todoListElement.select('tennis')
+	const modal = document.getElementById('modal');
+	openButton.addEventListener('click', async (event) => {
+		console.log('listener', event);
+		await modal.present();
+	});
 
-export const c4 = () => consoloe.log('c4');
+})()
 
-// openButton.addEventListener('balNavigate', (e) => console.log('listener'));
-openButton.addEventListener('click', (event) => console.log('listener', event));
+// openButton.addEventListener('click', (event) => {
+// 	console.log('listener', event);
+// 	modal.present();
+// });
