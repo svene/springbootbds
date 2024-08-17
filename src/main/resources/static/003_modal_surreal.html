@@ -14,7 +14,7 @@
 <bal-app>
 	<main class="container mt-xx-large">
 		<bal-heading>Modal</bal-heading>
-		<bal-button id="openBtn">
+		<bal-button>
 			<script>
 				me().on("click", (ev) => any('#modal').run(it => it.open()));
 			</script>
@@ -33,13 +33,13 @@
 			<bal-modal-body>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing?</p>
 				<bal-button-group position="right" reverse="true">
-					<bal-button id="cancelBtn" color="text">
+					<bal-button color="text">
 						<script>
 							me().on("click", (ev) => any('#modal').run(it => it.dismiss()));
 						</script>
 						Cancel
 					</bal-button>
-					<bal-button id="okBtn" color="primary">
+					<bal-button color="primary">
 						<script>
 							me().on("click", ev => {
 								// Unfortnuately data is not used by BDS-modal in html/js mode:
